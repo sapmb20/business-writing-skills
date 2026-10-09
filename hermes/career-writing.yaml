@@ -1,0 +1,10 @@
+name: career-writing
+description: "Résumés, STAR stories, cover letters, and offer replies."
+version: 1.0.0
+author: sapmb20
+license: CC-BY-4.0
+platforms: [linux, macos]
+metadata:
+  hermes:
+    tags: [Writing, Career, Resumes, Interviews, Offers]
+    related_skills: [presentations, circling-back, virtual-presentations, delivering-bad-news, business-writing, selecting-medium, email-writing, line-editing, lists-and-headings, memo-writing, reports-and-proposals, visuals, grammar-and-mechanics, research-and-sources]

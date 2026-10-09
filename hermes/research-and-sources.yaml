@@ -1,0 +1,10 @@
+name: research-and-sources
+description: "Research, evaluate, quote, and cite sources (APA)."
+version: 1.0.0
+author: sapmb20
+license: CC-BY-4.0
+platforms: [linux, macos]
+metadata:
+  hermes:
+    tags: [Writing, Business, Research, Citations, APA, Plagiarism, Sources]
+    related_skills: [business-writing, reports-and-proposals, memo-writing, grammar-and-mechanics, visuals]

@@ -1,0 +1,10 @@
+name: blogs-and-social-media
+description: "Write blog, forum, LinkedIn, and social media posts."
+version: 1.0.0
+author: sapmb20
+license: CC-BY-4.0
+platforms: [linux, macos]
+metadata:
+  hermes:
+    tags: [Writing, Business, Blog, Social Media, LinkedIn, Forum, Posts]
+    related_skills: [business-writing, promotional-writing, writing-for-the-web, selecting-medium, career-writing]

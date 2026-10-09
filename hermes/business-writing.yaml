@@ -1,0 +1,10 @@
+name: business-writing
+description: "Draft, revise, and pressure-test emails, memos, and résumés."
+version: 1.0.0
+author: sapmb20
+license: CC-BY-4.0
+platforms: [linux, macos]
+metadata:
+  hermes:
+    tags: [Writing, Business, Email, Memos, Resumes, Career, Editing, Offers]
+    related_skills: [memo-writing, presentations, circling-back, virtual-presentations, delivering-bad-news, selecting-medium, email-writing, line-editing, lists-and-headings, career-writing, reports-and-proposals, visuals, grammar-and-mechanics, research-and-sources, promotional-writing, writing-for-the-web, blogs-and-social-media, instructions-and-procedures]

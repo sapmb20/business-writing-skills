@@ -1,0 +1,10 @@
+name: writing-for-the-web
+description: "Write web pages, FAQs; repurpose content for the web."
+version: 1.0.0
+author: sapmb20
+license: CC-BY-4.0
+platforms: [linux, macos]
+metadata:
+  hermes:
+    tags: [Writing, Business, Web, Website, FAQ, SEO, Accessibility, Repurposing]
+    related_skills: [business-writing, promotional-writing, blogs-and-social-media, lists-and-headings, line-editing, research-and-sources]

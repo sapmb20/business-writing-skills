@@ -1,0 +1,10 @@
+name: line-editing
+description: "Line-edit prose: wordiness, passive voice, parallelism."
+version: 1.0.0
+author: sapmb20
+license: CC-BY-4.0
+platforms: [linux, macos]
+metadata:
+  hermes:
+    tags: [Writing, Editing, Style, Grammar]
+    related_skills: [presentations, circling-back, virtual-presentations, delivering-bad-news, business-writing, selecting-medium, email-writing, lists-and-headings, career-writing, memo-writing, reports-and-proposals, visuals, grammar-and-mechanics, research-and-sources]

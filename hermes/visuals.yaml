@@ -1,0 +1,10 @@
+name: visuals
+description: "Choose and build charts, tables, and figures."
+version: 1.0.0
+author: sapmb20
+license: CC-BY-4.0
+platforms: [linux, macos]
+metadata:
+  hermes:
+    tags: [Writing, Business, Visuals, Charts, Tables, Graphs, Data Visualization]
+    related_skills: [business-writing, reports-and-proposals, presentations, memo-writing, lists-and-headings, grammar-and-mechanics, research-and-sources]

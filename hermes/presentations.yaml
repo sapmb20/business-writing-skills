@@ -1,0 +1,10 @@
+name: presentations
+description: "Plan, structure, slide-design, and deliver presentations."
+version: 1.0.0
+author: sapmb20
+license: CC-BY-4.0
+platforms: [linux, macos]
+metadata:
+  hermes:
+    tags: [Writing, Business, Presentations, Slides, Slide Design, Public Speaking, Pitching]
+    related_skills: [circling-back, virtual-presentations, business-writing, selecting-medium, lists-and-headings, line-editing, memo-writing, email-writing, delivering-bad-news, career-writing, reports-and-proposals, visuals, grammar-and-mechanics, research-and-sources]

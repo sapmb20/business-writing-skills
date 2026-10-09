@@ -1,0 +1,10 @@
+name: reports-and-proposals
+description: "Formal reports, exec summaries, proposals, plans."
+version: 1.0.0
+author: sapmb20
+license: CC-BY-4.0
+platforms: [linux, macos]
+metadata:
+  hermes:
+    tags: [Writing, Business, Reports, Proposals, Executive Summaries, Business Plans, Investment Memos]
+    related_skills: [business-writing, memo-writing, lists-and-headings, line-editing, presentations, email-writing, selecting-medium, visuals, grammar-and-mechanics, research-and-sources]

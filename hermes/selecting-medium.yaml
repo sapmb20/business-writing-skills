@@ -1,0 +1,10 @@
+name: selecting-medium
+description: "Choose email, call, memo, or meeting for a work message."
+version: 1.0.0
+author: sapmb20
+license: CC-BY-4.0
+platforms: [linux, macos]
+metadata:
+  hermes:
+    tags: [Writing, Business, Communication, Medium, Channel]
+    related_skills: [presentations, circling-back, virtual-presentations, delivering-bad-news, business-writing, email-writing, line-editing, lists-and-headings, career-writing, memo-writing, reports-and-proposals, visuals, grammar-and-mechanics, research-and-sources]

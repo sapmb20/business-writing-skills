@@ -6,9 +6,8 @@ for the medium, and several revision passes before anything is delivered.** It w
 [Claude Code](https://code.claude.com/docs/en/skills) and in the Hermes agent,
 and it ships with 18 fill-in templates drawn from openly licensed and public-domain sources.
 
-Most AI writing failures aren't grammar. They are confident claims nobody confirmed, a memo
-that should have been a phone call, or bad news delivered in the wrong order. These skills
-are built to catch those first.
+Ask for a memo, and it first checks whether a memo is the right call. Ask for a rejection
+letter, and it puts the reasons before the no.
 
 ---
 
@@ -178,18 +177,25 @@ backs up any existing copies on the host, installs them, and lints every skill. 
 
 The family was first built against a commercial business-writing textbook and checked line
 by line: 392 entries, 5,734 rule units (94.6% matched by script, the rest triaged by hand),
-and 2,704 index sub-entries. That edition stays private, because it follows the textbook
-closely. This public edition keeps the method and the structure, and replaces the
-book-derived content with original writing and openly licensed sources.
+and 2,704 index sub-entries. That edition stays private, because its reference material
+follows the textbook closely.
+
+The framework is original and appears here in full: splitting the work into 19 skills, the
+routing tree that loads each one at the step that needs it, the premise check and context
+gate, the wrong-premise revision pass, the entry-and-exit rule, and the verification
+tooling. None of it came from the textbook or the course. The underlying writing steps
+(prepare, research, organize, write, revise) are standard practice; the book-derived
+reference content was replaced with original writing and openly licensed sources.
 
 Checks run on this edition before publishing:
 
-- **Workflow audit:** all 19 skills reachable from the entry skill, every sibling points
-  back, every reference file is triggered, and every drafting skill has its
-  entry-and-exit block. 0 failures.
-- **Copy check:** no 10-word run shared with the textbook.
-- **Scrub scan:** no personal details or course material in the files or the history.
-- **Licenses:** every adopted source verified on its live page.
+- **Every request reaches the right skill.** A workflow audit confirms all 19 skills are
+  reachable from the entry skill, every one routes back for revision, and no reference file
+  is orphaned. 0 failures.
+- **Safe to fork and adapt.** A copy check found no passage of 8 or more words shared with
+  the textbook, and every adopted source's license was verified on its live page, so you
+  can reuse this under the licenses below.
+- **No personal or course material**, in any file or anywhere in the commit history.
 
 The tools and the full recipe are in [METHOD.md](METHOD.md) and [`tools/`](tools/), so you
 can run the same checks on your own skill family.

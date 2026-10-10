@@ -35,33 +35,35 @@ back for revision. No route skips the checks.
 
 ### The routing tree
 
+Each step of the sequence loads its specialists:
+
 ```mermaid
-flowchart TD
-    BW["business-writing: the six-step sequence"]
-    BW --> PREP["Step 1: Preparation"]
-    BW --> RES["Step 2: Research"]
-    BW --> ORG["Step 3: Organization"]
-    BW --> OUT["Step 4: Outlining"]
-    BW --> REV["Step 6: Revision"]
-    PREP -- "medium not fixed" --> SM["selecting-medium"]
-    PREP -- "email or letter" --> EW["email-writing"]
-    PREP -- "memo" --> MW["memo-writing"]
-    PREP -- "report, proposal, plan" --> RP["reports-and-proposals"]
-    PREP -- "promotes or announces" --> PW["promotional-writing"]
-    PREP -- "web page or FAQ" --> WW["writing-for-the-web"]
-    PREP -- "blog or social post" --> BS["blogs-and-social-media"]
-    PREP -- "how-to, policy, form" --> IP["instructions-and-procedures"]
-    PREP -- "talk or deck" --> PR["presentations"]
+flowchart LR
+    S1["1 Preparation"] -- "choose the medium" --> MED["a drafting skill (next diagram)"]
+    S1 -- "recruiting" --> CW["career-writing"]
+    S2["2 Research"] -- "uses sources" --> RS["research-and-sources"]
+    S3["3 Organization"] -- "bad news" --> DB["delivering-bad-news"]
+    S4["4 Outlining"] -- "lists, headings" --> LH["lists-and-headings"]
+    S4 -- "charts, tables" --> VIS["visuals"]
+    S6["6 Revision"] -- "pass 4" --> LE["line-editing"]
+    S6 -- "pass 5" --> LH
+    S6 -- "pass 7" --> GM["grammar-and-mechanics"]
+```
+
+At step 1.4, the medium decides which drafting skill takes over:
+
+```mermaid
+flowchart LR
+    SM["selecting-medium"] -- "email or letter" --> EW["email-writing"]
+    SM -- "memo" --> MW["memo-writing"]
+    SM -- "report, proposal, plan" --> RP["reports-and-proposals"]
+    SM -- "promotes or announces" --> PW["promotional-writing"]
+    SM -- "web page or FAQ" --> WW["writing-for-the-web"]
+    SM -- "blog or social post" --> BS["blogs-and-social-media"]
+    SM -- "how-to, policy, form" --> IP["instructions-and-procedures"]
+    SM -- "talk or deck" --> PR["presentations"]
     PR -- "online or recorded" --> VP["virtual-presentations"]
     PR -- "follow-up email" --> CB["circling-back"]
-    PREP -- "recruiting" --> CW["career-writing"]
-    RES -- "uses sources" --> RS["research-and-sources"]
-    ORG -- "bad news" --> DB["delivering-bad-news"]
-    OUT -- "lists, headings" --> LH["lists-and-headings"]
-    OUT -- "charts, tables" --> VIS["visuals"]
-    REV -- "pass 4" --> LE["line-editing"]
-    REV -- "pass 5" --> LH
-    REV -- "pass 7" --> GM["grammar-and-mechanics"]
 ```
 
 ---

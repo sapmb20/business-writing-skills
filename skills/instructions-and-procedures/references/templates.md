@@ -77,35 +77,55 @@ revisions so that no one works from an outdated copy.
 
 ## 2. Job description
 
-> **Source and license.** Written for this repo (CC BY 4.0, see LICENSE-CONTENT), following
-> the four-section structure in `instructions-and-procedures` section 5.
+> **Source and license.** Compiled for this repo (CC BY 4.0, see LICENSE-CONTENT). The
+> wording is new; the four-section structure follows `instructions-and-procedures`
+> section 5. Each element is credited in the "How this was compiled" table below. The
+> duties list draws on two public sources: the US federal rule on "essential functions",
+> and the task lists in O*NET, the US Department of Labor's occupation database.
 
 ```
 Job title:        [Title]
 Department:       [Department]
 Reports to:       [Title of the manager, not a name]
-Status:           [Full-time / part-time; exempt / non-exempt]
+Status:           [Full-time / part-time; FLSA exempt / non-exempt]
 Location:         [On-site / hybrid / remote; city]
+Last reviewed:    [Month D, YYYY]
 
 Scope
 [Two or three sentences: what the role is mainly for, its secondary functions, and who
 reports to it.]
 
-Duties (most important first; each begins with a verb)
+Essential functions (most important first; each begins with a verb)
 - [Prepare the monthly variance analysis for the operating budget]
 - [Reconcile the operating bank accounts weekly]
 - [...]
+
+Other duties (marginal functions)
+- [Back up the payables clerk during month-end close]
 - [Perform other related duties as assigned]   (optional, last)
 
 Requirements
 - Education: [Required]; [preferred]
 - Experience: [Years and kind]
 - Licenses or certifications: [e.g. CPA preferred]
-- Skills: [Specific tools and abilities]
+- Skills and tools: [Specific software and abilities, e.g. Excel (pivot tables, lookups), ERP system]
 
 [Optional: physical requirements, travel, and the equal-opportunity statement your
 organization uses.]
 ```
 
-Describe the job, not the current holder; list every regular task before ranking them; keep
-duties specific enough that a qualified outsider could tell what the job involves.
+Describe the job, not the current holder. Before ranking the duties, list every regular
+task. Keep each duty specific enough that a qualified outsider could tell what the job
+involves. Write and date the description **before** advertising the job: a dated description
+is evidence of which functions are essential.
+
+**How this was compiled**
+
+| Element | Source |
+| --- | --- |
+| Four sections: identification, scope, duties, requirements; verb-first duties in decreasing importance; describe the job, not the person | `instructions-and-procedures` section 5 (repo) |
+| Essential functions kept separate from marginal ones | 29 CFR § 1630.2(n)(1) (EEOC regulations under the Americans with Disabilities Act), https://www.law.cornell.edu/cfr/text/29/1630.2 |
+| Writing the description before advertising or interviewing | 29 CFR § 1630.2(n)(3)(ii): written job descriptions prepared before advertising or interviewing are evidence of which functions are essential |
+| Duties written as specific task statements; tools and software named; experience and credentials listed separately | O*NET OnLine occupation profiles, e.g. "Financial and Investment Analysts" (13-2051.00), https://www.onetonline.org/link/summary/13-2051.00 (US Department of Labor, Employment and Training Administration, CC BY 4.0). Structure only; no O*NET text is reproduced. |
+| Exempt or non-exempt status | Fair Labor Standards Act; US Department of Labor, Wage and Hour Division, Fact Sheet #17A |
+| "Other duties as assigned" placed last; a review date | Repo convention |

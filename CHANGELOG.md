@@ -1,5 +1,23 @@
 # Changelog
 
+## 1.1.0 (2026-10-10)
+
+The 10 templates labeled "Original" now have named sources.
+
+- **Adapted** from public-domain text: the incident report now follows OSHA Form 301.
+- **Compiled**, with new wording and every element checked against named sources: the
+  other nine. Each ends with a "How this was compiled" table that pairs each element with
+  its source and flags where this repo departs from that source or adds its own convention.
+- Changes the check produced:
+  - **Cover letter:** the close no longer proposes interview times (Penn), and the
+    "Dear Hiring Manager" fallback is added.
+  - **Job description:** splits essential from marginal functions (29 CFR § 1630.2(n)).
+  - **RFP response:** follows the FAR's Section L and M logic.
+  - **FAQ:** now asks whether an FAQ should exist at all (UK government guidance).
+  - **Letter:** adds the optional "Re:" line.
+  - **Bad-news letter:** lists when to use the direct order instead.
+- README and ATTRIBUTION.md list the sources for every template.
+
 ## 1.0.0 (2026-10-09)
 
 First public release.

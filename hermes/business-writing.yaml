@@ -1,6 +1,6 @@
 name: business-writing
 description: "Draft, revise, and pressure-test emails, memos, and résumés."
-version: 1.0.0
+version: 1.1.0
 author: sapmb20
 license: CC-BY-4.0
 platforms: [linux, macos]

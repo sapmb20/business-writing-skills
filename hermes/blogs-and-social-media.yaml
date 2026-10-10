@@ -1,6 +1,6 @@
 name: blogs-and-social-media
 description: "Write blog, forum, LinkedIn, and social media posts."
-version: 1.0.0
+version: 1.1.0
 author: sapmb20
 license: CC-BY-4.0
 platforms: [linux, macos]

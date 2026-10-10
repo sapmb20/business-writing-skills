@@ -125,10 +125,11 @@ Decision requested. [Approve $[amount] and [resource] by [date], so that [benefi
 
 ## 4. RFP response
 
-> **Source and license.** Written for this repo (CC BY 4.0, see LICENSE-CONTENT). Consistent
-> with "7.4 Proposals" in *Technical Writing Essentials, 2nd Edition* (Last, CC BY 4.0) and
-> with standard proposal-compliance practice. **The RFP's own instructions override this
-> outline** wherever they differ.
+> **Source and license.** Compiled for this repo (CC BY 4.0, see LICENSE-CONTENT). The
+> structure follows the way US federal solicitations are organized, under the Federal
+> Acquisition Regulation (FAR). The FAR is a US government work in the public domain; the
+> elements are credited in the table below. Private-sector RFPs vary, but most borrow the
+> same logic. **The RFP's own instructions override this outline** wherever they differ.
 
 ```
 Cover letter                    (signed by someone authorized to commit the firm)
@@ -137,17 +138,27 @@ Table of contents
 Compliance matrix               (every RFP requirement → where your response answers it)
 1  Executive summary            (their need in their words; your solution; why you)
 2  Understanding of the need    (restate the problem and the evaluation criteria)
-3  Proposed solution            (approach, deliverables, what is and isn't included)
-4  Work plan and schedule       (milestones, dates, dependencies)
-5  Team and qualifications      (named people, roles, relevant past work)
-6  Pricing                      (in the exact format the RFP requires)
-7  References                   (clients who agreed to be contacted)
-Appendices                      (required forms, certifications, résumés)
+3  Technical approach           (approach, deliverables, what is and isn't included)
+4  Management plan and schedule (milestones, dates, dependencies, key personnel)
+5  Past performance             (relevant past work; references who agreed to be contacted)
+6  Pricing                      (in the exact format the RFP requires, often a separate volume)
+Appendices                      (required forms, representations and certifications, résumés)
 ```
 
 Before submitting: every requirement in the matrix is answered, page and font limits are
-met, required forms are signed, and the deadline is in the RFP's time zone. A sales
-proposal can be legally binding once accepted, so have pricing and terms reviewed.
+met, required forms are signed, and the deadline is in the RFP's time zone. A proposal can
+become binding once accepted, so have pricing and terms reviewed.
+
+**How this was compiled**
+
+| Element | Source |
+| --- | --- |
+| Follow the solicitation's instructions on format, parts, and limits | FAR 15.204-5(b), Section L, "Instructions, conditions, and notices to offerors", https://www.acquisition.gov/far/15.204-5 |
+| Separate parts: administrative, management, technical, past performance, and cost or pricing data | FAR 15.204-5(b): the instructions may require proposals "in severable parts" and list these parts as examples |
+| Mirror the evaluation criteria in the response | FAR 15.204-5(c), Section M, "Evaluation factors for award" |
+| Representations and certifications as a required attachment | FAR 15.204-1, Table 15-1 (uniform contract format, Section K), https://www.acquisition.gov/far/15.204-1 |
+| Compliance matrix; cover letter; executive summary | Proposal-writing practice, not a FAR requirement. The matrix is this repo's suggestion for checking every Section L and M item. |
+| Purpose, scope, and audience of a proposal | Last, *Technical Writing Essentials*, "7.4 Proposals" (CC BY 4.0), as used in section 3 above |
 
 ---
 
@@ -188,21 +199,37 @@ Use the same format every period so readers can compare reports.
 
 ## 6. Incident report
 
-> **Source and license.** Written for this repo (CC BY 4.0, see LICENSE-CONTENT). Consistent
-> with standard incident-reporting practice (facts before analysis, no blame, exact times),
-> as described in open technical-writing texts such as *Technical Writing Essentials*
-> (Last, CC BY 4.0).
+> **Source and license.** The fact questions are adapted from the US Occupational Safety
+> and Health Administration's **Form 301, *Injury and Illness Incident Report*** (Rev.
+> 04/2004), items 10-18, in OSHA's recordkeeping forms package,
+> https://www.osha.gov/sites/default/files/OSHA-RK-Forms-Package.pdf. Form 301 is a work of
+> the US federal government, in the public domain (17 U.S.C. § 105). OSHA does not endorse
+> this adaptation. **Changes:** the form's questions are generalized beyond workplace
+> injuries (equipment, data, financial, and customer incidents) and set in a memo report.
+> The timeline, corrective-action table, and finance notes are added for this repo
+> (CC BY 4.0).
 
 ```
 To / From / Date / Subject: Incident report: [what happened], [date], [location]
 
 Summary. [One or two sentences: what happened, when, where, and the current status.]
 
+Case details.
+- Date of the incident; time work or the process began; time of the event
+  (or "time cannot be determined")
+- What was the person or process doing just before the incident? Name the activity and
+  the tools, equipment, systems, or materials in use. Be specific.
+- What happened? Tell how the incident occurred.
+- What was harmed, and how? (The part of the body; the equipment, data, money, or
+  customers affected.)
+- What object, substance, system, or event directly caused the harm? (Leave blank if
+  none.)
+
 Timeline. [Exact times, in order.]
 | Time | Event | Source (witness, log, system record) |
 
-People and impact. [Injuries; damage; data, money, or customers affected; work stopped
-and for how long.]
+Treatment and impact. [Where treatment was given; emergency room or overnight stay;
+damage; work stopped and for how long.]
 
 Immediate actions taken. [Who did what, and when.]
 
@@ -211,8 +238,21 @@ Cause. [Known cause, or "under investigation". Label anything uncertain as such.
 Corrective actions.
 | Action | Owner | Due date |
 
+Completed by: [Name, title, phone, date]
 Attachments. [Photos, logs, witness statements.]
 ```
 
 Keep the tone neutral, state facts rather than opinions, and assign no blame: the report
-may be used in insurance, regulatory, or legal proceedings.
+may be used in insurance, regulatory, or legal proceedings. Keep personal details out of
+the narrative fields (Form 301 asks for no names in items 14-17), and limit who can read
+the report to the people who need it.
+
+**For a workplace injury or illness in the US, this memo does not replace Form 301.**
+- **Deadline:** a recordable case needs Form 301, or an equivalent that contains all of
+  its information, within 7 calendar days.
+- **Retention:** keep it for 5 years after the year it covers (29 CFR Part 1904).
+
+**Finance note:** for a control failure or a payment error, add the dollar amount, the
+accounts and periods affected, whether the error reached the financial statements, and who
+was notified (controller, audit committee). Keep the report with the control's
+documentation.

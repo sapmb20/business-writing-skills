@@ -1,6 +1,6 @@
 name: visuals
 description: "Choose and build charts, tables, and figures."
-version: 1.0.0
+version: 1.1.0
 author: sapmb20
 license: CC-BY-4.0
 platforms: [linux, macos]

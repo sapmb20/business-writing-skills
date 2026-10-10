@@ -3,8 +3,9 @@
 **A family of 19 agent skills that make an AI assistant write business documents the way a
 careful professional does: purpose and audience first, facts verified, the right format
 for the medium, and several revision passes before anything is delivered.** It works in
-[Claude Code](https://code.claude.com/docs/en/skills) and in the Hermes agent,
-and it ships with 18 fill-in templates drawn from openly licensed and public-domain sources.
+[Claude Code](https://code.claude.com/docs/en/skills) and in the Hermes agent, and it
+ships with 18 fill-in templates, each adapted from or checked against a named
+institutional source.
 
 Ask for a memo, and it first checks whether a memo is the right call. Ask for a rejection
 letter, and it puts the reasons before the no.
@@ -140,24 +141,33 @@ Each template states its source and license in its own header. Details are in
 | Formal report outline | `reports-and-proposals` | Adapted from Last (CC BY 4.0) |
 | Internal proposal | `reports-and-proposals` | Adapted from Last (CC BY 4.0) |
 | Progress report | `reports-and-proposals` | Adapted from Last (CC BY 4.0) |
-| RFP response | `reports-and-proposals` | Original |
-| Incident report | `reports-and-proposals` | Original |
+| RFP response | `reports-and-proposals` | Compiled from the US Federal Acquisition Regulation (FAR 15.204) |
+| Incident report | `reports-and-proposals` | Adapted from OSHA Form 301 (public domain) |
 | Standard operating procedure | `instructions-and-procedures` | Adapted from US EPA, *Guidance for Preparing SOPs* (public domain) |
-| Job description | `instructions-and-procedures` | Original |
+| Job description | `instructions-and-procedures` | Compiled from EEOC rules (29 CFR § 1630.2(n)) and US Department of Labor O*NET |
 | Agenda and minutes | `presentations` | Adapted from *Robert's Rules of Order* (1876, public domain) |
-| Request email and follow-up | `email-writing` | Original |
-| Full-block business letter | `email-writing` | Original |
-| Indirect bad-news letter | `delivering-bad-news` | Original |
-| Complaint response (adjustment) | `delivering-bad-news` | Original |
-| Press release | `promotional-writing` | Original |
-| Sales letter | `promotional-writing` | Original |
-| FAQ page | `writing-for-the-web` | Original |
-| One-page finance résumé and cover letter | `career-writing` | Original |
+| Request email and follow-up | `email-writing` | Compiled from Rivers, *Communication at Work* (CC BY 4.0); follow-up timing is a repo convention |
+| Full-block business letter | `email-writing` | Compiled from Rivers (CC BY 4.0) and USPS Publication 28 |
+| Indirect bad-news letter | `delivering-bad-news` | Compiled from Rivers (CC BY 4.0) |
+| Complaint response (adjustment) | `delivering-bad-news` | Compiled from Rivers (CC BY 4.0) |
+| Press release | `promotional-writing` | Compiled from an Ohio State open text and the Texas Commission on the Arts template |
+| Sales letter | `promotional-writing` | Compiled from Rivers (CC BY 4.0), with FTC and CAN-SPAM rules |
+| FAQ page | `writing-for-the-web` | Compiled from Digital.gov and UK, Welsh, and New Zealand government content guidance |
+| One-page finance résumé and cover letter | `career-writing` | Compiled from Harvard and Penn career-center templates and guides |
 
-The sourcing rule: adopt a credible, openly licensed template when one fits the family's
-principles; otherwise write one, and cite what it is consistent with. Plain-language rules
-come from two public-domain US government guides: the SEC's *A Plain English Handbook* and
-the federal plain-language guidelines.
+**Adapted** means the template's text derives from an openly licensed or public-domain
+original. **Compiled** means the wording is new, and every element is checked against
+named institutional sources. Each compiled template ends with a "How this was compiled"
+table that pairs each element with its source. Where the sources disagree, or the repo
+adds its own convention, the table says so.
+
+The sourcing rule:
+- Adopt a credible template when its license allows it (public domain or CC BY).
+- Otherwise compile one, and cite sources whose licenses don't allow copying (NC, SA, or
+  all rights reserved) without reproducing them.
+
+Plain-language rules come from two public-domain US government guides: the SEC's
+*A Plain English Handbook* and the federal plain-language guidelines.
 
 ---
 
@@ -218,7 +228,7 @@ can run the same checks on your own skill family.
 ## License and provenance
 
 - **Code** (`scripts/`, `tools/`): [MIT](LICENSE).
-- **Skill text and original templates:** [CC BY 4.0](LICENSE-CONTENT).
+- **Skill text and compiled templates:** [CC BY 4.0](LICENSE-CONTENT).
 - **Adopted material** keeps its own license (CC BY 4.0 or public domain), stated in each
   file and in [ATTRIBUTION.md](ATTRIBUTION.md).
 

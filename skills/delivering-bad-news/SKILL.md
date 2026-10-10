@@ -11,6 +11,9 @@ something the reader can use. This skill picks the pattern and supplies its part
 
 Sources: "Writing a Bad-News Letter" (tulsaccprof, YouTube) and "How to Give Your Boss Bad
 News" (Alexa Fischer, YouTube). The two sequences and their parts come from those videos.
+The customer-facing sequence agrees with the open textbook *Communication at Work*
+(Rivers, eCampusOntario, CC BY 4.0, section 8.3), which the templates credit element by
+element.
 Section 4 covers the standard bad-news correspondence types (see ATTRIBUTION.md at the repo
 root). The pattern-choice table, the override signals, the common failures, and "don't
 wait" are this skill's own synthesis.

@@ -46,7 +46,7 @@ flowchart LR
     S4["4 Outlining"] -- "lists, headings" --> LH["lists-and-headings"]
     S4 -- "charts, tables" --> VIS["visuals"]
     S6["6 Revision"] -- "pass 4" --> LE["line-editing"]
-    S6 -- "pass 5" --> LH
+    S6 -- "pass 5" --> LH2["lists-and-headings"]
     S6 -- "pass 7" --> GM["grammar-and-mechanics"]
 ```
 

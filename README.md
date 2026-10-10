@@ -33,21 +33,32 @@ Every drafting skill carries an **entry-and-exit rule**: if a request starts the
 a press release"), it first runs the preparation steps and, when the draft is done, hands
 back for revision. No route skips the checks.
 
-### The routing tree
+### How a request moves through the system
 
-Each step of the sequence loads its specialists:
+Two gates can stop drafting, a failed check sends the work back to the step that caused
+it, and specialists (dotted lines) join only at the step that needs them:
 
 ```mermaid
-flowchart LR
-    S1["1 Preparation"] -- "choose the medium" --> MED["a drafting skill (next diagram)"]
-    S1 -- "recruiting" --> CW["career-writing"]
-    S2["2 Research"] -- "uses sources" --> RS["research-and-sources"]
-    S3["3 Organization"] -- "bad news" --> DB["delivering-bad-news"]
-    S4["4 Outlining"] -- "lists, headings" --> LH["lists-and-headings"]
-    S4 -- "charts, tables" --> VIS["visuals"]
-    S6["6 Revision"] -- "pass 4" --> LE["line-editing"]
-    S6 -- "pass 5" --> LH2["lists-and-headings"]
-    S6 -- "pass 7" --> GM["grammar-and-mechanics"]
+flowchart TD
+    REQ(["A request"]) --> P1
+    ALT(["A request that starts at a specialist, such as 'write a press release'"]) -. "entry rule: preparation runs first" .-> P1
+    P1["1 Preparation: purpose, audience, scope, medium"] --> PC{"Premise check: is every claim about the facts confirmed?"}
+    PC -- "a claim is unconfirmed" --> FIX["cut it, ask about it, or state it as a plan"] --> PC
+    PC -- "yes" --> CG{"Context gate: would a missing fact change the draft?"}
+    CG -- "yes" --> ASK["ask the user, once"] --> P1
+    CG -- "no" --> R2["2 Research"] --> O3["3 Organization"] --> O4["4 Outlining"] --> W5["5 Writing"]
+    W5 --> REV["6 Revision in seven passes: structure, wrong-premise reread, 8 S's, line edit, format, constraints, proofread"]
+    REV --> OK{"Does it meet the purpose and pass every check?"}
+    OK -- "no" --> BACK["return to the step that caused the problem"]
+    BACK -.-> P1
+    BACK -.-> O3
+    OK -- "yes" --> DEL(["Deliver, with every assumption flagged"])
+
+    P1 -. "medium decided" .-> SP1["selecting-medium, then one of 11 drafting skills (next diagram)"]
+    R2 -. "draws on sources" .-> SP2["research-and-sources: evaluate, quote, cite"]
+    O3 -. "message carries bad news" .-> SP3["delivering-bad-news: reasons before the no for customers, news first for a boss"]
+    O4 -. "needs lists or charts" .-> SP4["lists-and-headings, visuals"]
+    REV -. "passes 4, 5, and 7" .-> SP5["line-editing, lists-and-headings, grammar-and-mechanics"]
 ```
 
 At step 1.4, the medium decides which drafting skill takes over:
